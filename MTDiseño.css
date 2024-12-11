@@ -1,0 +1,184 @@
+header {
+    background-color: #ffb3ba;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo {
+    color: #ffe0e6;
+    font-size: 2em;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.marco-teorico {
+    background-color: #ffdfba;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.seccion h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #6e4d3a;
+}
+
+
+.seccion {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.contenido p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    /* Justifica el texto para una mejor apariencia */
+    margin-bottom: 20px;
+    color: #555;
+    /* Ajusta el color del texto si es necesario */
+}
+
+.decoracion::before,
+.decoracion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.decoracion::before {
+    background-image: url('ruta/a/helado1.png'), url('ruta/a/helado2.png'), url('ruta/a/helado3.png');
+    background-size: 30px 50px;
+    background-repeat: no-repeat;
+    animation: float 8s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.decoracion::after {
+    background-image: radial-gradient(circle, #ff9aa2, #ffb3ba, #ffdfba, #b5ead7, #c7ceea);
+    background-size: 5px 5px;
+    background-repeat: repeat;
+    opacity: 0.6;
+    animation: sparkles 5s infinite linear;
+}
+
+@keyframes sparkles {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 200px 200px;
+    }
+}
+
+.marco-teorico,
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.decoracion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px;
+    padding: 10px 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Estilos para el contenedor de imágenes */
+.contenido .imagenes {
+    display: flex;
+    justify-content: center;
+    /* Centra las imágenes */
+    gap: 10px;
+    /* Espacio entre imágenes */
+    margin-top: 20px;
+    /* Separación respecto al texto */
+}
+
+.contenido .imagenes img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contenido .imagenes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Analisis Estructurado</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="MTDiseño.css">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Ayuda</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Contactanos</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">MAS FRIO</span>MAS RICO</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">MAS FRIO <br></span>MAS RICO</h1>
+                    </a>
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">INICIO</a>
+                        <a href="MarcoTeorico.html" class="nav-item nav-link">Marco Teórico</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Análisis Estructurado</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="#diagrama-ambiental" class="dropdown-item">Diagrama Ambiental</a>
+                                <a href="#diagrama-comportamiento" class="dropdown-item">Diagrama de Comportamiento</a>
+                                <a href="#diagrama-pert" class="dropdown-item">Diagrama PERT</a>
+                                <a href="#diagrama-casosdeuso" class="dropdown-item">Casos de Uso</a>
+                            </div>
+                        </div>
+                        <a href="OO.html" class="nav-item nav-link">Orientado a Objetos</a>
+                        <a href="videos.html" class="nav-item nav-link">Videos</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+
+
+    <!-- Header Start -->
+        <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3 mt-lg-5">Analisis Estructural</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">Inicio</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Analisis Estructural</p>
+            </div>
+         </div>
+    </div>
+    <!-- Header End -->
+
+<!-- Portfolio Start -->
+<div class="container-fluid py-5 px-0">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <h1 class="section-title position-relative text-center mb-5">En esta sección mostraremos los diagramas avanzados en clase</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-4 pb-2">
+                    <li class="btn btn-sm btn-outline-primary m-1" onclick="location.href='#diagrama-ambiental'">Ambiental</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" onclick="location.href='#diagrama-comportamiento'">Comportamiento</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" onclick="location.href='#diagrama-pert'">Pert</li>
+                    <li class="btn btn-sm btn-outline-primary m-1" onclick="location.href='#diagrama-casosdeuso'">Casos de Uso</li>
+                
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h1>Analisis Estructural</h1>
+            <p>El análisis estructural es una metodología utilizada para comprender y modelar sistemas complejos, descomponiéndolos en componentes más simples y entendibles. Este enfoque se centra en identificar las relaciones entre los elementos de un sistema, definiendo sus entradas, salidas y procesos principales. Es una herramienta clave en el diseño y desarrollo de sistemas, ya que permite una representación clara de los requerimientos y el flujo de información.  
+               En esta sección, exploraremos diversos diagramas utilizados en el análisis estructural, como los Diagramas Ambientales,  que delimitan el sistema y su entorno; los Diagramas de Comportamiento, que describen la dinámica interna del sistema; y los Diagramas PERT, que ayudan a planificar y gestionar proyectos mediante la representación de tareas y dependencias.</p>
+        </div>
+    </div>
+</div>
+
+<!-- New Sections Start -->
+<div class="container-fluid py-5 px-0">
+    <div class="container py-5">
+<!-- Section: Diagrama Ambiental -->
+<div id="diagrama-ambiental" class="row justify-content-center">
+    <div class="col-lg-5">
+        <h2 class="section-title position-relative text-center mb-4">Diagrama Ambiental</h2>
+        <p class="text-center">
+            Un diagrama ambiental representa los elementos del entorno que interactúan con un sistema, 
+            ayudando a identificar las entradas, salidas y relaciones con agentes externos. Es útil para 
+            comprender el contexto y los límites del sistema que se está analizando.
+        </p>
+    </div>
+    <div class="col-lg-5"></div>
+    <h2>Como funciona?</h2>
+    <p class="text-center">
+        El diagrama ambiental es una herramienta gráfica utilizada en el análisis estructural para representar el sistema que se está diseñando y su relación con el entorno. Este tipo de diagrama tiene como objetivo principal identificar los límites del sistema, los elementos externos que interactúan con él, así como las entradas y salidas de información o recursos.
+    </p>
+    <h2>Para que sirve?</h2>
+    <p class="text-center">
+        Este diagrama sirve para delimitar el alcance del sistema, facilitando la comprensión de cómo interactúa con otros actores externos como personas, organizaciones, otros sistemas o procesos. También permite identificar los flujos de información, recursos o productos entre el sistema y su entorno, lo que resulta crucial para asegurar que se incluyan todos los elementos necesarios en el diseño y se definan claramente las responsabilidades de cada componente involucrado.
+    </p>         
+</div>
+<h2 class="section-title position-relative text-center mb-4"> Imagenes de Ayuda</h2>
+<div class="row m-0 portfolio-container">
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
+        <img class="img-fluid w-100" src="img/ambiental2.png" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
+        <img class="img-fluid w-100" src="img/ambiental.png" alt="">
+    </div>
+</div>
+<br>
+
+<!-- Section: Diagrama de Comportamiento -->
+<div id="diagrama-comportamiento" class="row justify-content-center">
+    <div class="col-lg-5">
+        <h2 class="section-title position-relative text-center mb-4">Diagrama de Comportamiento</h2>
+        <p class="text-center">
+            Los diagramas de comportamiento son herramientas que muestran cómo se comportan o interactúan 
+            los elementos de un sistema en diferentes escenarios. Estos diagramas ayudan a modelar procesos, 
+            actividades y transiciones de estados.
+        </p>
+    </div>
+</div>
+<div>
+    <h2 class="section-title position-relative text-center mb-4">¿Cómo funciona?</h2>
+    <p class="text-center">
+        Un diagrama de comportamiento describe las dinámicas internas de un sistema, como la interacción entre sus 
+        componentes o los cambios de estado a lo largo del tiempo. A través de este diagrama, se representan las 
+        actividades, transiciones y flujos de información, facilitando la comprensión de las funciones y procesos 
+        del sistema en diversos escenarios.
+    </p>
+    <h2 class="section-title position-relative text-center mb-4">¿Para qué sirve?</h2>
+    <p class="text-center">
+        Este tipo de diagrama es útil para analizar y visualizar el flujo de control dentro de un sistema, 
+        ayudando a identificar posibles cuellos de botella o problemas en la lógica del sistema. Es ideal para 
+        modelar procesos complejos, asegurando que se cumplan los requisitos funcionales del sistema.
+    </p>
+</div>
+<h2 class="section-title position-relative text-center mb-4">Imágenes de ayuda</h2>
+<div class="row m-0 portfolio-container">
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+        <img class="img-fluid w-100" src="img/comportamiento.png" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+        <img class="img-fluid w-100" src="img/compor1.jpg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+        <img class="img-fluid w-100" src="img/compor2.jpg" alt="">
+    </div>
+</div>
+<br>
+
+<!-- Section: Diagrama PERT -->
+<div id="diagrama-pert" class="row justify-content-center">
+    <div class="col-lg-5">
+        <h2 class="section-title position-relative text-center mb-4">Diagrama PERT</h2>
+        <p class="text-center">
+            El diagrama PERT (Program Evaluation Review Technique) es una herramienta gráfica utilizada 
+            para representar y analizar las tareas de un proyecto, enfocándose en la secuencia de actividades, 
+            tiempos estimados y dependencias. Es útil para la planificación y gestión de proyectos complejos.
+        </p>
+    </div>
+</div>
+<div>
+    <h2 class="section-title position-relative text-center mb-4">¿Cómo funciona?</h2>
+    <p class="text-center">
+        El diagrama PERT organiza y analiza las actividades de un proyecto, mostrando la secuencia de tareas 
+        necesarias para completar el trabajo. Funciona mediante nodos que representan eventos importantes o hitos, 
+        conectados por flechas que representan tareas o actividades con duración estimada.
+    </p>
+    <h2 class="section-title position-relative text-center mb-4">¿Para qué sirve?</h2>
+    <p class="text-center">
+        Sirve para identificar las tareas críticas en un proyecto, es decir, aquellas que determinan la duración 
+        total del mismo. Ayuda a planificar, programar y controlar los recursos, tiempos y dependencias, 
+        asegurando una gestión eficiente del proyecto.
+    </p>
+</div>
+<h2 class="section-title position-relative text-center mb-4">Imágenes de ayuda</h2>
+<div class="row m-0 portfolio-container">
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+        <img class="img-fluid w-100" src="img/pert2.jpeg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+        <img class="img-fluid w-100" src="img/pert.jpg" alt="">
+    </div>
+</div>
+<br>
+
+
+<!-- Section: Casos de Uso -->
+<div id="diagrama-casosdeuso" class="row justify-content-center">
+    <div class="col-lg-5">
+        <h2 class="section-title position-relative text-center mb-4">Casos de Uso</h2>
+        <p class="text-center">
+            Los casos de uso son representaciones de las interacciones entre los actores (usuarios u otros sistemas) y 
+            un sistema, describiendo cómo se logran los objetivos específicos a través del sistema. Permiten identificar 
+            los requisitos funcionales y documentar los escenarios de uso.
+        </p>
+    </div>
+</div>
+<h2 class="section-title position-relative text-center mb-4">¿Cómo funcionan?</h2>
+<p class="text-center">
+    Los casos de uso muestran, mediante diagramas y descripciones textuales, los pasos que siguen los usuarios para 
+    interactuar con el sistema. Cada caso de uso se centra en una tarea o funcionalidad específica, proporcionando 
+    claridad sobre el flujo de información y las expectativas de comportamiento del sistema.
+</p>
+<h2 class="section-title position-relative text-center mb-4">¿Para qué sirven?</h2>
+<p class="text-center">
+    Los casos de uso son fundamentales para entender y documentar los requerimientos del sistema, 
+    identificar roles clave y definir las interacciones necesarias para cumplir con los objetivos. 
+    Son herramientas esenciales en el diseño y desarrollo de sistemas orientados a las necesidades del usuario.
+</p>
+
+<h2 class="section-title position-relative text-center mb-4">¿Para qué sirven?</h2>
+<p class="text-center">
+    Los casos de uso son fundamentales para entender y documentar los requerimientos del sistema, 
+    identificar roles clave y definir las interacciones necesarias para cumplir con los objetivos. 
+    Son herramientas esenciales en el diseño y desarrollo de sistemas orientados a las necesidades del usuario.
+</p>
+<h2 class="section-title position-relative text-center mb-4">Imágenes de ayuda</h2>
+<div class="row m-0 portfolio-container">
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item fourth">
+        <img class="img-fluid w-100" src="img/Caso1.jpeg" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 p-0 portfolio-item fourth">
+        <img class="img-fluid w-100" src="img/caso2.jpeg" alt="">
+    </div>
+</div>
+   
+        <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">MAS FRIO</span>MAS RICO</h1>
+                    </a>
+                </div>
+                <div class="col-12 mb-4">
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Facultad de Ciencias Puras y Naturales</h5>
+                            <p class="mb-2">Monoblock-Univerisdad Mayor de San Andres</p>
+                            <p class="mb-0">+591 77598967</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Horario de Atencion </h5>
+                            <p class="mb-2">Lunes – Viernes, 9AM – 12PM</p>
+                            <p class="mb-0">Fin de Semana - Cerrado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="m-0">&copy; <a href="#">INF - 162 </a>. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
